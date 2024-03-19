@@ -1,7 +1,5 @@
+import HomePage from "../components/templates/HomePage";
+
 export default function Home() {
-  return (
-    <div>
-      <h1>BotoFood</h1>
-    </div>
-  );
+  return <HomePage />;
 }

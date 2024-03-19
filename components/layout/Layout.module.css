@@ -14,7 +14,7 @@
 }
 
 .right a {
-  margin-left: 15px;
+  margin-left: 35px;
   color: dimgrey;
   font-weight: 500;
 }
@@ -33,7 +33,7 @@
 }
 
 .container {
-  min-height: 1000px;
+  min-height: 74vh;
 }
 
 @media (max-width: 900px) {
