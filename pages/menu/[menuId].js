@@ -13,7 +13,7 @@ function MenuDetail({ data }) {
 export default MenuDetail;
 
 export async function getStaticPaths() {
-  const res = await fetch("http://localhost:4000/data");
+  const res = await fetch(`${process.env.BASE_URL}/data`);
   const data = await res.json();
   const newData = data.slice(0, 10);
 
@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   console.log(params);
-  const res = await fetch(`http://localhost:4000/data/${params.menuId}`);
+  const res = await fetch(`${process.env.BASE_URL}/data/${params.menuId}`);
   const data = await res.json();
 
   if (!data) {
@@ -39,6 +39,6 @@ export async function getStaticProps({ params }) {
     props: {
       data,
     },
-    revalidate: 10, // In seconds
+    revalidate: +process.env.REVALIDATE,
   };
 }
