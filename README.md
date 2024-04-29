@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## About The Project
 
-- [Demo Project](https://botofood-sigma.vercel.app/menu)
+- [Demo Project](https://botofood-sigma.vercel.app)
 - [Demo Api](https://botofood-api.liara.run/data)
 
 ### Built With
